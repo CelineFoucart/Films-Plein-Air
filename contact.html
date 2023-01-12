@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival du Film de Plein Air</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex justify-content-center align-items-center" href="/">
+                <img src="/img/logo.png" alt="logo caméra" class="d-inline-block align-text-center">
+                <span class="logo-text">Films de Plein Air</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/movies.html">Films</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/contact.html">Réservation et contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/info.html">Informations pratiques</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1 class="display-1 text-center">Festival du Film de Plein Air</h1>
+    </header>
+
+    <main class="container my-5">
+        <div class="row flex-md-row-reverse">
+            <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
+                <article>
+                    <h2 class="display-6 mb-4">Un film vous intéresse&nbsp;?</h2>
+                    <p class="lead">Pré-réservez votre séance. L'accès aux projections est gratuit.</p>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="shadow-sm border mb-4 form-card">
+                    <header class="header-form">
+                        <div class="text-center pb-3">
+                            <i class="bi bi-bookmark-check h1 text-white"></i>
+                        </div>
+                        <h2 class="title-form">Pré-réservez vos places</h2>
+                    </header>
+                    <form action="" method="post" class="form-body">
+                        <div class="form-section">
+                            <input type="text" class="form-control form-default" name="firstname" id="firstname">
+                            <label for="firstname" class="form-label">Prénom</label>
+                        </div>
+                        <div class="form-section">
+                            <input type="text" class="form-control form-default" name="lastname" id="lastname">
+                            <label for="lastname" class="form-label">Nom</label>
+                        </div>
+                        <div class="form-section">
+                            <input type="email" class="form-control form-default" name="email" id="email">
+                            <label for="email" class="form-label">Email</label>
+                        </div>
+                        <div class="form-section">
+                            <input type="number" min="1" max="10" step="1" class="form-control form-default" name="places" id="places">
+                            <label for="places" class="form-label">Nombre de places</label>
+                        </div>
+                        <div class="form-section">
+                            <select type="number" min="1" max="10" step="1" class="form-select form-default" name="select" id="select">
+                                <option value="1">Léon</option>
+                                <option value="2">Gangs of New York</option>
+                                <option value="3">Nostalgia</option>
+                                <option value="4">Annie Colère</option>
+                                <option value="5">L'Empereur de Paris</option>
+                                <option value="6">The Young Lady</option>
+                                <option value="7">Les éléphants</option>
+                                <option value="8">Métropolis</option>
+                                <option value="9">Radioactive</option>
+                                <option value="10">Intouchables</option>
+                                <option value="11">Border</option>
+                                <option value="12">Martha Marcy May Marlene</option>
+                            </select>
+                            <label for="select" class="form-label">Films</label>
+                        </div>
+                        <div class="mt-3 text-end">
+                            <button type="submit" class="btn btn-default">Envoyer</button>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
+                <article>
+                    <h2 class="display-6 mb-4">Une question ?</h2>
+                    <p class="lead">Remplissez le formulaire suivant, nous vous répondrons dans les plus brefs délais.</p>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="shadow-sm border mb-4 form-card h-100">
+                    <header class="header-form">
+                        <div class="text-center pb-3">
+                            <i class="bi bi-send h1 text-white"></i>
+                        </div>
+                        <h2 class="title-form">Contactez nous</h2>
+                    </header>
+                    <form action="" method="post" class="form-body">
+                        <div class="form-section">
+                            <input type="text" class="form-control form-default" name="firstname-contact" id="firstname-contact">
+                            <label for="firstname-contact" class="form-label">Prénom</label>
+                        </div>
+                        <div class="form-section">
+                            <input type="text" class="form-control form-default" name="lastname-contact" id="lastname-contact">
+                            <label for="lastname-contact" class="form-label">Nom</label>
+                        </div>
+                        <div class="form-section">
+                            <input type="email" class="form-control form-default" name="email-contact" id="email-contact">
+                            <label for="email-contact" class="form-label">Email</label>
+                        </div>
+                        <div class="form-section">
+                            <input type="text" class="form-control form-default" name="object" id="object">
+                            <label for="object" class="form-label">Objet du message</label>
+                        </div>
+                        <div class="form-section">
+                            <textarea type="text" class="form-control form-default" name="content" id="content"></textarea>
+                            <label for="content" class="form-label">Message</label>
+                        </div>
+                        <div class="mt-3 text-end">
+                            <button type="submit" class="btn btn-default">Envoyer</button>
+                        </div>
+                    </form>
+                </article>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="h6">© Les Films de Plein Air</h2>
+                    <small>
+                        <a href="https://commons.wikimedia.org/wiki/File:Movies_At_Cape_Mentelle.jpg">Image © 2020 Copyright Cape Mentelle</a>
+                    </small>
+                </div>
+                <div class="col-md-6 text-end">
+                    Suivez-nous : 
+                    <a href="#" title="facebook" class="social"><i class="bi bi-facebook"></i></a>
+                    <a href="#" title="twitter" class="social"><i class="bi bi-twitter"></i></a>
+                    <a href="#" title="instagram" class="social"><i class="bi bi-instagram"></i></a>
+                    <a href="#" title="youtube" class="social"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/bootstrap/popper.min.js"></script>
+    <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

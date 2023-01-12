@@ -1,0 +1,307 @@
+/*-------------------------------------------*\
+Basic styles
+\*-------------------------------------------*/
+@font-face {
+    font-family: Montserrat;
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+body,
+html {
+    color: #333;
+}
+
+.text-muted {
+    color: #61676D;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserrat;
+}
+
+.btn-default {
+    background: #835716;
+    border-color: #835716;
+    color: #fff;
+}
+
+.btn-default:hover {
+    background: #5a3d12;
+    border-color: #5a3d12;
+    color: #fff;
+}
+
+.container h2,
+.container h3 {
+    font-family: Montserrat;
+    color: #835716;
+    font-weight: bold;
+}
+
+.color-icon {
+    color: #835716;
+}
+
+.card {
+    border-color: #835716;
+}
+
+/*-------------------------------------------*\
+Header style
+\*-------------------------------------------*/
+.header {
+    height: 600px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5)),
+        url("./img/640px-Movies_At_Cape_Mentelle.jpg") center center / cover no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width:992px) {
+    .header {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5)),
+            url("./img/2560px-Movies_At_Cape_Mentelle.jpg") center center / cover no-repeat;
+    }
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 1.4px;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.logo-text {
+    display: block;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+@media (min-width:992px) {
+    .navbar .nav-item {
+        padding-top: 10px;
+    }
+}
+
+/*-------------------------------------------*\
+Footer style
+\*-------------------------------------------*/
+
+.footer {
+    padding: 2rem 2rem 4rem;
+    background: #333;
+    color: #fff;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.footer h2 {
+    margin-bottom: 0;
+}
+
+.footer small {
+    font-size: 0.8rem;
+}
+
+.social {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/*-------------------------------------------*\
+Index style
+\*-------------------------------------------*/
+.card-movie {
+    margin-bottom: 1.5rem;
+}
+
+.card-movie .img-thumbnail {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #835716;
+    width: fit-content;
+}
+
+.card-movie .img-thumbnail img {
+    max-width: 100%;
+    height: 335px;
+}
+
+.card-movie img {
+    transition: all 0.3s ease-in-out;
+}
+
+.card-movie img:hover {
+    filter: brightness(50%);
+}
+
+.card-movie h3 {
+    font-size: 1rem;
+    margin-top: .3rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.card-movie p {
+    text-align: center;
+    color: #61676D;
+}
+
+/*-------------------------------------------*\
+Films style
+\*-------------------------------------------*/
+
+.img-rounded-movie {
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+
+@media (min-width:992px) {
+    .img-rounded-movie {
+        border-radius: 0;
+        border-bottom-left-radius: 0.375rem;
+        border-top-left-radius: 0.375rem;
+    }
+
+    .card .img-rounded-movie {
+        height: 270px;
+        width: 100%;
+    }
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+/*-------------------------------------------*\
+Blog style
+\*-------------------------------------------*/
+
+
+.card-title {
+    color: #835716;
+}
+
+.card-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link-post::after {
+    content: '';
+    display: block;
+    height: 1.4px;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.link-post:hover::after {
+    width: 100%;
+    background: #835716;
+}
+
+.pagination .page-link {
+    color: #835716;
+}
+
+.pagination .active>.page-link,
+.page-link.active {
+    color: #fff;
+    background-color: #835716;
+    border-color: #835716;
+}
+
+.pagination .page-link:focus {
+    box-shadow: 0 0 0 0.25rem rgba(131, 87, 22, .25);
+}
+
+/*-------------------------------------------*\
+Forms style
+\*-------------------------------------------*/
+
+.form-card {
+    border-radius: 0.375rem;
+}
+
+.header-form {
+    background: #835716;
+    border-radius: 0.375rem 0.375rem 0 0;
+    border: 1px solid #835716;
+    padding: 2rem 0 1rem;
+}
+
+.header-form .title-form {
+    color: #fff;
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.form-body {
+    padding: 2rem 3rem;
+}
+
+.form-section {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    color: #757575;
+    cursor: text;
+    transition: all .3s ease-in-out;
+}
+
+.form-default {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #757575;
+    border-radius: 0;
+    outline: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.form-default:focus,
+.form-default-active {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    border-bottom: 1px solid #835716;
+}
+
+.form-default:focus+.form-label,
+.form-control+.label-active {
+    color: #835716;
+    transform: translateY(-16px) translateX(-6px) scale(0.9);
+}
+
+.form-default.form-select:focus+.form-label,
+.form-select+.form-label,
+.form-select+.label-active {
+    color: #835716;
+    transform: translateY(-16px) translateX(0px) scale(0.9);
+}
+
+iframe {
+    width: 100%;
+}
