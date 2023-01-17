@@ -57,7 +57,7 @@ Header style
 .header {
     height: 600px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5)),
-        url("./img/640px-Movies_At_Cape_Mentelle.jpg") center center / cover no-repeat;
+        url("./img/640px-Movies_At_Cape_Mentelle.webp") center center / cover no-repeat;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ Header style
 @media (min-width:992px) {
     .header {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5)),
-            url("./img/2560px-Movies_At_Cape_Mentelle.jpg") center center / cover no-repeat;
+            url("./img/2560px-Movies_At_Cape_Mentelle.webp") center center / cover no-repeat;
     }
 }
 
